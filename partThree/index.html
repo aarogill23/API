@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NPS National Parks</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <table id="parksTable" class="parks-table">
+        <thead>
+            <tr>
+                <th class="table-header">National Park Name</th>
+                <th class="table-header">Location</th>
+                <th class="table-header">Website</th>
+            </tr>
+        </thead>
+        <tbody id="parksTableBody" class="table-body"></tbody>
+            <!-- Rows will be added here -->
+        </tbody>
+    </table>
+    <div>
+        <input type="text" id="searchInput" placeholder="Search for a park...">
+        <button onclick="searchNationalPark()">Search</button>
+        <button onclick="clearSearch()">Clear Search</button>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
