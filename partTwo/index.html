@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>National Parks | Samford</title>
+    <script src = "script.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <table id = "parksTable">
+        <tr class =  "table-header">
+            <th class = "column-name">Park Identifier</th>
+            <th class = "column-name">Park Name</th>
+            <th class = "column-name">Park Location</th>
+        </tr>
+    </table>
+
+<div id="parkForm">
+    <h2>Add New Park</h2>
+    <form id="addParkForm">
+        <label for="parkName">Park Name:</label>
+        <input type="text" id="parkName" name="parkName" required>
+        <label for="parkLocation">Park Location:</label>
+        <input type="text" id="parkLocation" name="parkLocation" required>
+        <button type="submit" onclick="addPark()">Add Park</button>
+    </form>
+</div>
+
+<div id="modifyParkForm">
+    <h2>Modify Existing Park</h2>
+    <form id="updateParkForm">
+        <label for="updateParkId">Park Identifier:</label>
+        <input type="text" id="updateParkId" name="updateParkId" required>
+        <label for="updateParkName">New Park Name:</label>
+        <input type="text" id="updateParkName" name="updateParkName" required>
+        <label for="updateParkLocation">New Park Location:</label>
+        <input type="text" id="updateParkLocation" name="updateParkLocation" required>
+        <button type="submit" onclick="modifyPark()">Update Park</button>
+    </form>
+</div>
+
+<div id="deleteParkForm">
+    <h2>Delete Existing Park</h2>
+    <form id="removeParkForm">
+        <label for="deleteParkId">Park Identifier:</label>
+        <input type="text" id="deleteParkId" name="deleteParkId" required>
+        <button type="submit" onclick="deletePark()">Delete Park</button>
+    </form>
+</div>
+
+</body>
+</html>
