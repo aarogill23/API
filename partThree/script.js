@@ -1,5 +1,5 @@
 const baseURL = "https://developer.nps.gov/api/v1";
-const apiKey = [insert API Key];
+const apiKey = "";
 
 function getNationalParks() {
   fetch(`${baseURL}/parks?limit=473&api_key=${apiKey}`)
